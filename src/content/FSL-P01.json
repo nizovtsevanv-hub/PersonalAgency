@@ -1,0 +1,89 @@
+{
+  "moduleId": "FSL-P01",
+  "title": "Ship or Sheep?",
+  "contrast": "/ɪ/ ↔ /iː/",
+  "sounds": [
+    {
+      "id": "ih",
+      "ipa": "/ɪ/",
+      "colorVar": "--c-ih",
+      "articulation": [
+        "Tongue high and near the front of the mouth",
+        "Jaw slightly open",
+        "Lips neutral or only slightly spread",
+        "Relatively short and relaxed quality"
+      ],
+      "kidsHints": ["Tongue high", "Listen and copy"],
+      "anchorWordId": "ship",
+      "wave": "short"
+    },
+    {
+      "id": "ee",
+      "ipa": "/iː/",
+      "colorVar": "--c-ee",
+      "articulation": [
+        "Tongue higher and more front",
+        "Lips slightly spread",
+        "Clearer, closer vowel quality",
+        "Typically longer duration"
+      ],
+      "kidsHints": ["Tongue high", "Small smile", "Listen and copy"],
+      "anchorWordId": "sheep",
+      "wave": "long"
+    }
+  ],
+  "words": [
+    { "id": "ship", "word": "ship", "ipa": "/ʃɪp/", "ru": "корабль", "sound": "ih", "spelling": "i", "set": "kids" },
+    { "id": "sheep", "word": "sheep", "ipa": "/ʃiːp/", "ru": "овца", "sound": "ee", "spelling": "ee", "set": "kids" },
+    { "id": "sit", "word": "sit", "ipa": "/sɪt/", "ru": "сидеть", "sound": "ih", "spelling": "i", "set": "kids" },
+    { "id": "seat", "word": "seat", "ipa": "/siːt/", "ru": "сиденье", "sound": "ee", "spelling": "ea", "set": "kids" },
+    { "id": "fill", "word": "fill", "ipa": "/fɪl/", "ru": "наполнять", "sound": "ih", "spelling": "i", "set": "kids" },
+    { "id": "feel", "word": "feel", "ipa": "/fiːl/", "ru": "чувствовать", "sound": "ee", "spelling": "ee", "set": "kids" },
+    { "id": "live", "word": "live", "ipa": "/lɪv/", "ru": "жить", "sound": "ih", "spelling": "i", "set": "adult" },
+    { "id": "leave", "word": "leave", "ipa": "/liːv/", "ru": "уходить", "sound": "ee", "spelling": "ea", "set": "adult" },
+    { "id": "bit", "word": "bit", "ipa": "/bɪt/", "ru": "кусочек", "sound": "ih", "spelling": "i", "set": "adult" },
+    { "id": "beat", "word": "beat", "ipa": "/biːt/", "ru": "ударять", "sound": "ee", "spelling": "ea", "set": "adult" }
+  ],
+  "sentences": {
+    "kids": {
+      "id": "kids-story",
+      "en": "The sheep sits on the ship.",
+      "ipa": "/ðə ʃiːp sɪts ɒn ðə ʃɪp/",
+      "ru": "Овца сидит на корабле.",
+      "tokens": ["The", "sheep", "sits", "on", "the", "ship."]
+    },
+    "adults": {
+      "id": "adult-key",
+      "en": "Please leave the keys on this seat.",
+      "ipa": "/pliːz liːv ðə kiːz ɒn ðɪs siːt/",
+      "ru": "Пожалуйста, оставьте ключи на этом сиденье.",
+      "tokens": ["Please", "leave", "the", "keys", "on", "this", "seat."]
+    },
+    "together": {
+      "id": "together-key",
+      "en": "Can you see the sheep on the ship?",
+      "ipa": "/kən juː siː ðə ʃiːp ɒn ðə ʃɪp/",
+      "ru": "Ты видишь овцу на корабле?",
+      "tokens": ["Can", "you", "see", "the", "sheep", "on", "the", "ship?"]
+    }
+  },
+  "dialogue": [
+    { "speaker": "A", "en": "Is this seat free?", "ru": "Это место свободно?" },
+    { "speaker": "B", "en": "Yes. Please sit here.", "ru": "Да. Пожалуйста, садитесь сюда." },
+    { "speaker": "A", "en": "Thank you. I need to leave at six.", "ru": "Спасибо. Мне нужно уйти в шесть." }
+  ],
+  "warningPair": [
+    {
+      "word": "beach",
+      "ipa": "/biːtʃ/",
+      "ru": "пляж",
+      "note": "Keep /iː/ clearly long and close in this word."
+    },
+    {
+      "word": "bitch",
+      "ipa": "/bɪtʃ/",
+      "ru": "грубое/оскорбительное слово",
+      "note": "If /iː/ in “beach” slips to /ɪ/, listeners may hear this offensive word. Shown as a pronunciation warning only, not practice content."
+    }
+  ]
+}
