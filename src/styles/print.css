@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Print styles — clean Parent/Teacher Summary from the Passport screen
+   ========================================================================== */
+
+@media print {
+  body {
+    background: #ffffff;
+    color: #16233b;
+  }
+
+  .app-header,
+  .coach-area,
+  .action-bar,
+  .passport-next,
+  .skip-link,
+  .modal-overlay {
+    display: none !important;
+  }
+
+  .app,
+  .app-body,
+  .screen,
+  .stage {
+    display: block;
+    padding: 0;
+    max-width: none;
+  }
+
+  .passport-print-area {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 16pt;
+  }
+
+  .passport-print-area .screen-title h1 {
+    font-size: 18pt;
+  }
+
+  .word-card,
+  .passport-node,
+  .passport-table,
+  .print-summary,
+  .highlight-sentence {
+    box-shadow: none !important;
+    border: 1px solid #dce5ee;
+  }
+
+  .passport-table th,
+  .passport-table td {
+    border-bottom: 1px solid #dce5ee;
+  }
+
+  .print-summary {
+    page-break-inside: avoid;
+    margin-top: 12pt;
+  }
+
+  .sound-passport {
+    page-break-inside: avoid;
+  }
+
+  a[href]::after {
+    content: '';
+  }
+}
