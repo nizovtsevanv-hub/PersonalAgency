@@ -176,10 +176,17 @@ function speakWithTts(text: string, rate: number, opts: SpeakOptions): Promise<A
         if (e.name === 'word' || e.charIndex !== undefined) opts.onBoundary?.(e.charIndex)
       }
     }
+    let settled = false
     const done = () => {
+      if (settled) return
+      settled = true
+      window.clearTimeout(watchdog)
       opts.onEnd?.()
       resolve(source)
     }
+    // Some engines (no installed voices, some headless/embedded browsers)
+    // never fire end/error events; never let the lesson hang on audio.
+    const watchdog = window.setTimeout(done, 1500 + text.length * (220 / rate))
     utter.onend = done
     utter.onerror = done
     try {
