@@ -63,7 +63,8 @@ export function SoundBoss() {
   const [stage, setStage] = useState<Stage>('hear')
   const [fluffy, setFluffy] = useState<FluffyState>('guiding')
 
-  const pairs = pairsForMode(state.mode)
+  // Stable identity matters: the item lists below memoise on `pairs`.
+  const pairs = useMemo(() => pairsForMode(state.mode), [state.mode])
 
   // -------------------- Stage 1: Hear --------------------
   const hearItems = useMemo(() => shuffle(pairs.flat()).slice(0, 4), [pairs])
